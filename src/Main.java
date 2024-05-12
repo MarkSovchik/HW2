@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int balance = 100;
-        int refill = 1000;
+        int ticketPrice = 13676;
+        int bonus = 20;
 
-        System.out.println("Баланс: " + (balance + refill));
-
-        if (refill>=1000) {
-            int bonus = ( refill * 1 ) / 100;
-            System.out.println("Начислен бонус: " + (bonus) + " рублей");
+        if (bonus >= 20) {
+            int Bonus = (ticketPrice / bonus);
+            System.out.println("Начислен бонус: " + Bonus);
         } else {
-            System.out.println("Бонус не начислен, так как сумма пополнения менее 1000 рублей.");
+            System.out.println("Бонус не начислен");
         }
+
+
     }
 }
+
