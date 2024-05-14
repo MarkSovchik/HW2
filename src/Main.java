@@ -2,15 +2,16 @@ public class Main {
     public static void main(String[] args) {
 
         int ticketPrice = 13676;
-        int bonus = 20;
+        int bonusMiles;
 
-        if (bonus >= 20) {
-            int Bonus = (ticketPrice / bonus);
-            System.out.println("Начислен бонус: " + Bonus);
+        if (ticketPrice >= 20) {
+            bonusMiles = ticketPrice / 20;
+            System.out.println("Начислен бонус: " + bonusMiles);
         } else {
-            System.out.println("Бонус не начислен");
+            bonusMiles = 0;
         }
-
+        
+        System.out.println("Количество бонусных миль: " + bonusMiles);
 
     }
 }
